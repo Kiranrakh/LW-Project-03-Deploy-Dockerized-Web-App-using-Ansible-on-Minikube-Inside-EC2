@@ -29,7 +29,7 @@ This project demonstrates how to **automate the deployment** of a simple **Docke
 
 ```
 
-ansible-k8s-app/
+LW-Project-03-Deploy-Dockerized-Web-App-using-Ansible-on-Minikube-Inside-EC2/
 ├── inventory.ini                # Ansible inventory
 ├── app/
 │   ├── index.html               # Simple static web page
