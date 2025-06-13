@@ -1,1 +1,9 @@
-a
+- name: Build Docker image inside Minikube
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Build Docker image
+      command: docker build -t mywebapp:latest /home/ubuntu/ansible-k8s-app/app
+
+    - name: Load image into Minikube
+      command: minikube image load mywebapp:latest
