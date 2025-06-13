@@ -74,7 +74,7 @@ sudo usermod -aG docker $USER
 
 ```bash
 # Install kubectl
-curl -LO https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+curl -s https://dl.k8s.io/release/stable.txt
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 
